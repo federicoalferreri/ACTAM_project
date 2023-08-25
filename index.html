@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>beat</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+    <div id="p0">
+        <p class="drum-name">KICK</p>
+        <p class="drum-name">CLAP</p>
+        <p class="drum-name">HIHAT</p>
+        <p class="drum-name">SNARE</p>
+        <p class="drum-name">PERC</p>
+        <p class="drum-name">SHAKER</p>
+        <p id="play-track">PLAY</p>
+        <p id="stop-track">STOP</p>
+    </div>
+
+    <div id="controls">
+        <p id="reset-track">RESET</p>
+        <input type="range" min="30" max="200" value="130" id="bpm-slider">
+        <p id="bpm">130 BPM</p>
+    </div>
+
+    <div class="sequencer">
+        <div class="d1">
+            <div class="sample kick"></div>
+            <div class="sample clap" ></div>
+            <div class="sample hihat"></div>
+            <div class="sample snare"></div>
+            <div class="sample perc"></div>
+            <div class="sample shaker"></div>
+        </div>
+
+        <div class="d2">
+            <div class="sample kick"></div>
+            <div class="sample clap"></div>
+            <div class="sample hihat"></div>
+            <div class="sample snare"></div>
+            <div class="sample perc"></div>
+            <div class="sample shaker"></div>
+        </div>
+
+        <div class="d3">
+            <div class="sample kick"></div>
+            <div class="sample clap"></div>
+            <div class="sample hihat"></div>
+            <div class="sample snare"></div>
+            <div class="sample perc"></div>
+            <div class="sample shaker"></div>
+        </div>
+
+        <div class="d4 space">
+            <div class="sample kick"></div>
+            <div class="sample clap"></div>
+            <div class="sample hihat"></div>
+            <div class="sample snare"></div>
+            <div class="sample perc"></div>
+            <div class="sample shaker"></div>
+        </div>
+
+        <div class="d5">
+            <div class="sample kick"></div>
+            <div class="sample clap"></div>
+            <div class="sample hihat"></div>
+            <div class="sample snare"></div>
+            <div class="sample perc"></div>
+            <div class="sample shaker"></div>
+        </div>
+
+        <div class="d6">
+            <div class="sample kick"></div>
+            <div class="sample clap"></div>
+            <div class="sample hihat"></div>
+            <div class="sample snare"></div>
+            <div class="sample perc"></div>
+            <div class="sample shaker"></div>
+        </div>
+
+        <div class="d7">
+            <div class="sample kick"></div>
+            <div class="sample clap"></div>
+            <div class="sample hihat"></div>
+            <div class="sample snare"></div>
+            <div class="sample perc"></div>
+            <div class="sample shaker"></div>
+        </div>
+
+        <div class="d8 space">
+            <div class="sample kick"></div>
+            <div class="sample clap"></div>
+            <div class="sample hihat"></div>
+            <div class="sample snare"></div>
+            <div class="sample perc"></div>
+            <div class="sample shaker"></div>
+        </div>
+
+        <div class="d9">
+            <div class="sample kick"></div>
+            <div class="sample clap"></div>
+            <div class="sample hihat"></div>
+            <div class="sample snare"></div>
+            <div class="sample perc"></div>
+            <div class="sample shaker"></div>
+        </div>
+
+        <div class="d10">
+            <div class="sample kick"></div>
+            <div class="sample clap"></div>
+            <div class="sample hihat"></div>
+            <div class="sample snare"></div>
+            <div class="sample perc"></div>
+            <div class="sample shaker"></div>
+        </div>
+
+        <div class="d11">
+            <div class="sample kick"></div>
+            <div class="sample clap"></div>
+            <div class="sample hihat"></div>
+            <div class="sample snare"></div>
+            <div class="sample perc"></div>
+            <div class="sample shaker"></div>
+        </div>
+
+        <div class="d12 space">
+            <div class="sample kick"></div>
+            <div class="sample clap"></div>
+            <div class="sample hihat"></div>
+            <div class="sample snare"></div>
+            <div class="sample perc"></div>
+            <div class="sample shaker"></div>
+        </div>
+
+        <div class="d13">
+            <div class="sample kick"></div>
+            <div class="sample clap"></div>
+            <div class="sample hihat"></div>
+            <div class="sample snare"></div>
+            <div class="sample perc"></div>
+            <div class="sample shaker"></div>
+        </div>
+
+        <div class="d14">
+            <div class="sample kick"></div>
+            <div class="sample clap"></div>
+            <div class="sample hihat"></div>
+            <div class="sample snare"></div>
+            <div class="sample perc"></div>
+            <div class="sample shaker"></div>
+        </div>
+
+        <div class="d15">
+            <div class="sample kick"></div>
+            <div class="sample clap"></div>
+            <div class="sample hihat"></div>
+            <div class="sample snare"></div>
+            <div class="sample perc"></div>
+            <div class="sample shaker"></div>
+        </div>
+
+        <div class="d16">
+            <div class="sample kick"></div>
+            <div class="sample clap"></div>
+            <div class="sample hihat"></div>
+            <div class="sample snare"></div>
+            <div class="sample perc"></div>
+            <div class="sample shaker"></div>
+        </div>
+    </div>
+    <div class="noted-pad">
+        <div class="b1">
+            <div class="note" id="1"></div>
+        </div>
+        <div class="b2 note-space">
+            <div class="note" id="2"></div>
+        </div>
+        <div class="b3">
+            <div class="note" id="3"></div>
+        </div>
+        <div class="b4">
+            <div class="note" id="4"></div>
+        </div>
+        <div class="b5 note-space">
+            <div class="note" id="5"></div>
+        </div>
+        <div class="b6">
+            <div class="note" id="6"></div>
+        </div>
+    </div>
+    <div class="note-pad">
+        <div class="b7">
+            <div class="note" id="7"></div>
+        </div>
+        <div class="b8">
+            <div class="note" id="8"></div>
+        </div>
+        <div class="b9">
+            <div class="note" id="9"></div>
+        </div>
+        <div class="b10">
+            <div class="note" id="10"></div>
+        </div>
+        <div class="b11">
+            <div class="note" id="11"></div>
+        </div>
+        <div class="b12">
+            <div class="note" id="12"></div>
+        </div>
+        <div class="b13">
+            <div class="note" id="13"></div>
+        </div>
+        <div class="b14">
+            <div class="note" id="14"></div>
+        </div>
+    </div>
+    <div class="select-dropdown">
+        <select id="wave">
+            <option value="sine">Sine wave</option>
+            <option value="square">Square wave</option>
+            <option value="triangle">Triangle wave</option>
+            <option value="sawtooth">Sawtooth wave</option>
+        </select>
+    </div>
+    <div id="controls-vibrato">
+        <label for="vibrato-amount-control">Vibrato Amount</label><br>
+        <input type="range" id="vibrato-amount-control" value="0" min="0" max="5" step="0.5"><br>
+        <label for="vibrato-amount-control">Vibrato Speed</label><br>
+        <input type="range" id="vibrato-speed-control" value="10" min="0" max="30" step="0.5"><br>
+    </div>
+    <div id="controls-envelope">
+        <label for="attack-control">Attack Time</label><br>
+        <input type="range" id="attack-control" value="0.3" min="0" max="0.5" step="0.02"><br>
+        <label for="release-control">Release Time</label><br>
+        <input type="range" id="release-control" value="0.3" min="0" max="0.5" step="0.02"><br>
+        <label for="note-length-control">Note Length</label><br>
+        <input type="range" id="note-length-control" value="1" min="0.2" max="2" step="0.05"><br>
+    </div>
+    <div id="controls-delay">
+        <label for="delay-time-control">Delay Time</label><br>
+        <input id='delay-time-control' type="range" min = "0" max = "1" step='0.05' value='0'><br>
+        <label for="feedback-control">Delay Feedback</label><br>
+        <input id='feedback-control' type="range" min = "0" max = ".9" step='0.05' value='0'><br>
+        <label for="delay-amount-control">Delay Amount</label><br>
+        <input id='delay-amount-control' type="range" min = "0" max = ".9" step='0.05' value='0'>
+    </div>
+</div>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
