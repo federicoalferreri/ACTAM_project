@@ -99,7 +99,7 @@ body{
 
 #reset-track:active {
     top: 0px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 10px #cfecff;
 }
 
 .d1,
@@ -163,21 +163,27 @@ body{
 
 .item-selected1 {
     background-image: radial-gradient(powderblue, royalblue);
+    box-shadow: 0 0 7px #cfecff;
 }
 .item-selected2 {
     background-image: radial-gradient(lightcoral, orangered);
+    box-shadow: 0 0 7px #cfecff;
 }
 .item-selected3 {
     background-image: radial-gradient(lightyellow, yellow);
+    box-shadow: 0 0 7px #cfecff;
 }
 .item-selected4 {
     background-image: radial-gradient(yellowgreen, seagreen);
+    box-shadow: 0 0 7px #cfecff;
 }
 .item-selected5 {
     background-image: radial-gradient(pink, lightcoral);
+    box-shadow: 0 0 7px #cfecff;
 }
 .item-selected6 {
     background-image: radial-gradient(gold, coral);
+    box-shadow: 0 0 7px #cfecff;
 }
 
 input[type=range] {
@@ -350,8 +356,8 @@ label{
 }
 
 #play-track:active {
-    top: 0px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    top: 2px;
+    box-shadow: 0px 0px 10px #cfecff;
 }
 #stop-track {
     font-weight: bold;
@@ -374,8 +380,8 @@ label{
 }
 
 #stop-track:active {
-    top: 0px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    top: 2px;
+    box-shadow: 0px 0px 10px #cfecff;
 }
 
 .pressed{

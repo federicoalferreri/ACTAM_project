@@ -128,6 +128,9 @@ document.onkeydown = function (e) {
             document.getElementById("14").classList.add("pressed");
             break;
     }
+    if (isPlaying){
+        playCurrentNote();
+    }
 }
 
 document.onkeyup = function (e) {
@@ -355,21 +358,21 @@ let isPlaying = false;
 startButton.onclick = function () {
     if (!isPlaying){
         isPlaying = true;
-        synthloop();
+        //synthloop();
     }
 }
 stopButton.onclick = function () {
     isPlaying = false;
 }
 
-function synthloop(){
+/*function synthloop(){
     if (isPlaying){
         playCurrentNote();
         window.setTimeout(function() {
             synthloop();
         }, BPM);
     }
-}
+}*/
 
 
 
