@@ -194,7 +194,7 @@ bpmSlider.oninput = function () {
     BPM = parseInt(((60 / bpmSlider.value) * 1000) / 4);
 }
 let c;
-c= document.querySelector(".d1").childNodes;
+c= document.querySelector(".btn1").childNodes;
 console.log(c);
 let i = -1;
 rowLoop = () => {
@@ -203,31 +203,31 @@ rowLoop = () => {
 
         if (i === rows.length) {
             i = 0;
-            document.querySelector(".d16").childNodes[1].classList.remove("row-highlight1");
-            document.querySelector(".d16").childNodes[3].classList.remove("row-highlight2");
-            document.querySelector(".d16").childNodes[5].classList.remove("row-highlight3");
-            document.querySelector(".d16").childNodes[7].classList.remove("row-highlight4");
-            document.querySelector(".d16").childNodes[9].classList.remove("row-highlight5");
-            document.querySelector(".d16").childNodes[11].classList.remove("row-highlight6");
+            document.querySelector(".btn16").childNodes[1].classList.remove("row-highlight1");
+            document.querySelector(".btn16").childNodes[3].classList.remove("row-highlight2");
+            document.querySelector(".btn16").childNodes[5].classList.remove("row-highlight3");
+            document.querySelector(".btn16").childNodes[7].classList.remove("row-highlight4");
+            document.querySelector(".btn16").childNodes[9].classList.remove("row-highlight5");
+            document.querySelector(".btn16").childNodes[11].classList.remove("row-highlight6");
         }
 
-        document.querySelector(".d" + (i + 1)).childNodes[1].classList.add("row-highlight1");
-        document.querySelector(".d" + (i + 1)).childNodes[3].classList.add("row-highlight2");
-        document.querySelector(".d" + (i + 1)).childNodes[5].classList.add("row-highlight3");
-        document.querySelector(".d" + (i + 1)).childNodes[7].classList.add("row-highlight4");
-        document.querySelector(".d" + (i + 1)).childNodes[9].classList.add("row-highlight5");
-        document.querySelector(".d" + (i + 1)).childNodes[11].classList.add("row-highlight6");
+        document.querySelector(".btn" + (i + 1)).childNodes[1].classList.add("row-highlight1");
+        document.querySelector(".btn" + (i + 1)).childNodes[3].classList.add("row-highlight2");
+        document.querySelector(".btn" + (i + 1)).childNodes[5].classList.add("row-highlight3");
+        document.querySelector(".btn" + (i + 1)).childNodes[7].classList.add("row-highlight4");
+        document.querySelector(".btn" + (i + 1)).childNodes[9].classList.add("row-highlight5");
+        document.querySelector(".btn" + (i + 1)).childNodes[11].classList.add("row-highlight6");
 
         if (i > 0) {
-            document.querySelector(".d" + i).childNodes[1].classList.remove("row-highlight1");
-            document.querySelector(".d" + i).childNodes[3].classList.remove("row-highlight2");
-            document.querySelector(".d" + i).childNodes[5].classList.remove("row-highlight3");
-            document.querySelector(".d" + i).childNodes[7].classList.remove("row-highlight4");
-            document.querySelector(".d" + i).childNodes[9].classList.remove("row-highlight5");
-            document.querySelector(".d" + i).childNodes[11].classList.remove("row-highlight6");
+            document.querySelector(".btn" + i).childNodes[1].classList.remove("row-highlight1");
+            document.querySelector(".btn" + i).childNodes[3].classList.remove("row-highlight2");
+            document.querySelector(".btn" + i).childNodes[5].classList.remove("row-highlight3");
+            document.querySelector(".btn" + i).childNodes[7].classList.remove("row-highlight4");
+            document.querySelector(".btn" + i).childNodes[9].classList.remove("row-highlight5");
+            document.querySelector(".btn" + i).childNodes[11].classList.remove("row-highlight6");
         }
 
-        document.querySelectorAll(".d" + (i + 1)).forEach(function (bruh) {
+        document.querySelectorAll(".btn" + (i + 1)).forEach(function (bruh) {
             if (bruh.childNodes[1].classList.contains("row-highlight1") && bruh.childNodes[1].classList.contains("item-selected1")) {
                 kick.load();
                 kick.play();
@@ -261,7 +261,7 @@ rowLoop = () => {
     }, BPM);
 }
 
-// Call rowLoop() function
+//rowLoop() function to run the beat
 rowLoop();
 
 
@@ -286,7 +286,7 @@ document.getElementById('wave').addEventListener('change', function() {
 let attackTime = 0.3;
 let sustainLevel = 0.8;
 let releaseTime = 0.3;
-let noteLength = 1;
+let noteLength = 0.2;
 
 const attackControl = document.querySelector('#attack-control');
 const releaseControl = document.querySelector('#release-control');
@@ -353,16 +353,24 @@ feedbackControl.addEventListener('input', function() {
 
 const startButton = document.getElementById("play-track");
 const stopButton = document.getElementById("stop-track");
+const notes = document.querySelectorAll(".note");
 let isPlaying = false;
 
 startButton.onclick = function () {
     if (!isPlaying){
         isPlaying = true;
+        notes.forEach(function (e){
+            e.classList.add("notes-activated");
+        })
         //synthloop();
+
     }
 }
 stopButton.onclick = function () {
     isPlaying = false;
+    notes.forEach(function (e){
+        e.classList.remove("notes-activated");
+    })
 }
 
 /*function synthloop(){

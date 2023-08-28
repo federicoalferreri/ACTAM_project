@@ -25,7 +25,7 @@ body{
     box-shadow: 0 0 7px #cfecff;
 }
 
-#p0 {
+#sounds {
     margin-top: 70px;
     width: 55px;
     padding-left: 2px;
@@ -84,8 +84,8 @@ body{
     color: #282828;
     padding: 6px 14px;
     border-radius: 6px;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 6px 10px #282828;
+    border: 1px solid #282828;
     position: relative;
     -webkit-user-select: none;
     background-image: radial-gradient(white, silver);
@@ -93,8 +93,8 @@ body{
 
 #reset-track:hover {
     cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #484848;
+    box-shadow: 0px 4px 10px #484848;
 }
 
 #reset-track:active {
@@ -102,22 +102,22 @@ body{
     box-shadow: 0px 0px 10px #cfecff;
 }
 
-.d1,
-.d2,
-.d3,
-.d4,
-.d5,
-.d6,
-.d7,
-.d8,
-.d9,
-.d10,
-.d11,
-.d12,
-.d13,
-.d14,
-.d15,
-.d16{
+.btn1,
+.btn2,
+.btn3,
+.btn4,
+.btn5,
+.btn6,
+.btn7,
+.btn8,
+.btn9,
+.btn10,
+.btn11,
+.btn12,
+.btn13,
+.btn14,
+.btn15,
+.btn16{
     background-color: rgba(0, 0, 0, 0);
     height: 40px;
     width: 40px;
@@ -267,6 +267,10 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .note-space{
     margin-right: 40px;
 }
+.notes-activated{
+    box-shadow: 0px 0px 5px whitesmoke;
+    background-image: radial-gradient(whitesmoke, #bfffe6);
+}
 
 .select-dropdown {
     position: absolute;
@@ -341,8 +345,8 @@ label{
     padding: 4px 4px;
     letter-spacing: -0.5px;
     border-radius: 6px;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 6px 10px #282828;
+    border: 1px solid #282828;
     position: relative;
     -webkit-user-select: none;
     margin-top: 125px;
@@ -351,8 +355,8 @@ label{
 
 #play-track:hover {
     cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #484848;
+    box-shadow: 0px 4px 10px #484848;
 }
 
 #play-track:active {
@@ -365,8 +369,8 @@ label{
     padding: 4px 3px;
     letter-spacing: -0.5px;
     border-radius: 6px;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 6px 10px #282828;
+    border: 1px solid #282828;
     position: relative;
     -webkit-user-select: none;
     margin-top: 25px;
@@ -375,8 +379,8 @@ label{
 
 #stop-track:hover {
     cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #484848;
+    box-shadow: 0px 4px 10px #484848;
 }
 
 #stop-track:active {
@@ -385,7 +389,8 @@ label{
 }
 
 .pressed{
-    background-image: radial-gradient(#e6fff2, #80ffbd);
+    background-image: radial-gradient(#bfffe6, #0dff9e);
+    box-shadow: 0 0 7px #cfecff;
 }
 #vibrato-amount-control{
     background-color: black;
