@@ -5,11 +5,17 @@ const kick = new Audio('sounds/Kick.wav'),
     hihat = new Audio("sounds/HiHat.wav"),
     snare = new Audio("sounds/Snare.wav"),
     perc = new Audio("sounds/Perc.wav"),
-    shaker = new Audio("sounds/Shaker.wav");
+    shaker = new Audio("sounds/Shaker.wav"),
+    kick2= new Audio("sounds/CrunchKick.wav"),
+    clap2= new Audio("sounds/ClackClap.wav"),
+    hihat2= new Audio("sounds/ClackOpenHiHat.wav"),
+    snare2= new Audio("sounds/ClackSnare.wav"),
+    perc2= new Audio("sounds/CrunchLowPerc.wav"),
+    shaker2= new Audio("sounds/VHSShaker.wav");
 
 const item = document.querySelectorAll(".sample");
 
-// Checkbox toggle functionality
+// Checkbtn toggle functionality
 item.forEach(function (el) {
     el.onclick = function () {
         if(el.className.includes("kick")){
@@ -49,8 +55,7 @@ item.forEach(function (el) {
                 el.classList.add("item-selected6");
             }
         }
-    }
-});
+    }}    );
 
 // Clear button functionality
 document.getElementById("reset-track").onclick = function () {
@@ -193,6 +198,32 @@ bpmSlider.oninput = function () {
     bpmText.innerHTML = this.value + " BPM";
     BPM = parseInt(((60 / bpmSlider.value) * 1000) / 4);
 }
+
+let kickname = "KICK";
+document.getElementById('k').addEventListener('change', function() {
+    kickname = document.getElementById('k').value;
+});
+let clapname = "CLAP";
+document.getElementById('cl').addEventListener('change', function() {
+    clapname = document.getElementById('cl').value;
+});
+let hihatname = "HIHAT";
+document.getElementById('hh').addEventListener('change', function() {
+    hihatname = document.getElementById('hh').value;
+});
+let snarename = "SNARE";
+document.getElementById('sn').addEventListener('change', function() {
+    snarename = document.getElementById('sn').value;
+});
+let percname = "PERC";
+document.getElementById('pe').addEventListener('change', function() {
+    percname = document.getElementById('pe').value;
+});
+let shakername = "SHAKER";
+document.getElementById('sh').addEventListener('change', function() {
+    shakername = document.getElementById('sh').value;
+});
+
 let c;
 c= document.querySelector(".btn1").childNodes;
 console.log(c);
@@ -229,31 +260,61 @@ rowLoop = () => {
 
         document.querySelectorAll(".btn" + (i + 1)).forEach(function (bruh) {
             if (bruh.childNodes[1].classList.contains("row-highlight1") && bruh.childNodes[1].classList.contains("item-selected1")) {
-                kick.load();
-                kick.play();
+                if(kickname==="KICK"){
+                    kick.load();
+                    kick.play();
+                }else{
+                    kick2.load();
+                    kick2.play();
+                }
             }
 
             if (bruh.childNodes[3].classList.contains("row-highlight2") && bruh.childNodes[3].classList.contains("item-selected2")) {
-                clap.load();
-                clap.play();
+                if(clapname==="CLAP"){
+                    clap.load();
+                    clap.play();
+                }else{
+                    clap2.load();
+                    clap2.play();
+                }
             }
 
             if (bruh.childNodes[5].classList.contains("row-highlight3") && bruh.childNodes[5].classList.contains("item-selected3")) {
-                hihat.load();
-                hihat.play();
+                if(hihatname==="HIHAT"){
+                    hihat.load();
+                    hihat.play();
+                }else{
+                    hihat2.load();
+                    hihat2.play();
+                }
             }
 
             if (bruh.childNodes[7].classList.contains("row-highlight4") && bruh.childNodes[7].classList.contains("item-selected4")) {
-                snare.load();
-                snare.play();
+                if(snarename==="SNARE"){
+                    snare.load();
+                    snare.play();
+                }else{
+                    snare2.load();
+                    snare2.play();
+                }
             }
             if (bruh.childNodes[9].classList.contains("row-highlight5") && bruh.childNodes[9].classList.contains("item-selected5")) {
-                perc.load();
-                perc.play();
+                if(percname==="PERC"){
+                    perc.load();
+                    perc.play();
+                }else{
+                    perc2.load();
+                    perc2.play();
+                }
             }
             if (bruh.childNodes[11].classList.contains("row-highlight6") && bruh.childNodes[11].classList.contains("item-selected6")) {
-                shaker.load();
-                shaker.play();
+                if(shakername==="SHAKER"){
+                    shaker.load();
+                    shaker.play();
+                }else{
+                    shaker2.load();
+                    shaker2.play();
+                }
             }
         });
 
@@ -279,7 +340,7 @@ function setWaveform() {
 }
 
 document.getElementById('wave').addEventListener('change', function() {
-        setWaveform();
+    setWaveform();
 });
 
 // Envelope
@@ -362,8 +423,6 @@ startButton.onclick = function () {
         notes.forEach(function (e){
             e.classList.add("notes-activated");
         })
-        //synthloop();
-
     }
 }
 stopButton.onclick = function () {
@@ -372,17 +431,6 @@ stopButton.onclick = function () {
         e.classList.remove("notes-activated");
     })
 }
-
-/*function synthloop(){
-    if (isPlaying){
-        playCurrentNote();
-        window.setTimeout(function() {
-            synthloop();
-        }, BPM);
-    }
-}*/
-
-
 
 function playCurrentNote() {
     const osc = context.createOscillator();

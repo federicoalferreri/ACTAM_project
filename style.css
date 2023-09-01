@@ -16,7 +16,7 @@ body{
     display: flex;
     background-color: black;
     height: 600px;
-    width: 950px;
+    width: 970px;
     border-radius: 11px;
     top: 50%;
     left: 50%;
@@ -26,23 +26,27 @@ body{
 }
 
 #sounds {
-    margin-top: 70px;
-    width: 55px;
+    margin-top: 82px;
+    width: 58px;
     padding-left: 2px;
-    padding-right: 15px;
+    padding-right: 25px;
+    box-sizing: content-box;
 }
 .drum-name {
     font-weight: bold;
     font-size: 10px;
-    letter-spacing: -1.5px;
-    line-height: 38px;
-    padding: 0px 0px 0px 3px;
-    border-radius: 6px;
-    margin: 4px 2px 0px;
-    background-color: #fff;
-    color: #282828;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    letter-spacing: -0.2px;
+    font-family: "myfont";
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    margin: 2px 2px 22px;
+    background-color: #E6E6E6;
+    box-sizing: border-box;
+    background-image: radial-gradient(white, silver);
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 #controls {
@@ -121,7 +125,7 @@ body{
     background-color: rgba(0, 0, 0, 0);
     height: 40px;
     width: 40px;
-    margin: 70px 2px 0px;
+    margin: 72px 2px 0px;
     display: inline-block;
 }
 
@@ -342,14 +346,14 @@ label{
 #play-track {
     font-weight: bold;
     color: #282828;
-    padding: 4px 4px;
+    padding: 5px 4px;
     letter-spacing: -0.5px;
     border-radius: 6px;
     box-shadow: 0px 6px 10px #282828;
     border: 1px solid #282828;
     position: relative;
     -webkit-user-select: none;
-    margin-top: 125px;
+    margin-top: 105px;
     background-image: radial-gradient(whitesmoke, silver);
 }
 
@@ -366,7 +370,7 @@ label{
 #stop-track {
     font-weight: bold;
     color: #282828;
-    padding: 4px 3px;
+    padding: 5px 2px;
     letter-spacing: -0.5px;
     border-radius: 6px;
     box-shadow: 0px 6px 10px #282828;
