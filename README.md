@@ -1,4 +1,4 @@
-### Advanced Coding Tools and Methodologies (A.Y. 22/23 – Politecnico di Milano)
+### Advanced Coding Tools and Methodologies [A.Y. 22/23 – Politecnico di Milano]
 
 # {PROJECT_NAME} : a web-based music sequencer and synthesizer
 
