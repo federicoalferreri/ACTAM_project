@@ -1,6 +1,6 @@
 ### Advanced Coding Tools and Methodologies [A.Y. 22/23 – Politecnico di Milano]
 
-# {PROJECT_NAME} : a web-based music sequencer and synthesizer
+# BEAT SEQUENCER: a web-based music sequencer and synthesizer
 
 Inspired by the launchpad technology, mainly used in electronic music production to create beats and playing loops, the following web application allows for the creation of musical loops either by using pre-loaded drum sound samples and / or a simple music synthesizer. 
 
