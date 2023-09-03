@@ -70,7 +70,7 @@ Waveforms are the starting point of synthesis—and of all sound. In a synthesiz
 
 
 
-- **Sine Wave**: The sound of a sine wave is only made up of the fundamental frequency alone and no partials are involed. It will result in a smooth and clean sound.
+- **Sine Wave**: The sound of a sine wave is only made up of the fundamental frequency alone and no partials are involved. It will result in a smooth and clean sound.
 
 - **Square Wave**:  In addition to the fundamental, the square wave also contains harmonics, partial tones whole multiples of the fundamental frequency. In square waves, harmonics occur in whole odd-number multiples of the fundamental frequency resulting in a richer and buzzier sound.
 
