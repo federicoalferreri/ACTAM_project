@@ -14,7 +14,7 @@ The application has been developed using HTML, CSS and JS code.
 
 Overall view with which the application presents itself to the user. 
 
-We're now gonna break down the different interface elements, providing a basic user's guide on how to get started creating your musical beat loop.
+We're now gonna break down the different interface elements, providing a basic user's guide on how to get started creating your musical beat-loop.
 
 ## BEATMAKER 
 
