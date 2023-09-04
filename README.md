@@ -18,7 +18,8 @@ We're now gonna break down the different interface elements, providing a basic u
 
 ## BEATMAKER 
 
-<img width="972" alt="image" src="https://github.com/federicoalferreri/ACTAM_project/assets/115798271/a6f923b8-e648-4dfd-8e24-83beff7a555a">
+<img width="972" alt="Screenshot 2023-09-03 at 15 59 05" src="https://github.com/federicoalferreri/ACTAM_project/assets/115798271/c4084d64-998d-4888-b514-fee19687a188">
+
 
 In this first section we’re able to create a sound loop developing over 4 bars using different imported pre-loaded drum sound samples (also uploaded in this github page).
 
