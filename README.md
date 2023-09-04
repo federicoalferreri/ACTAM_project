@@ -33,7 +33,8 @@ On the top-left corner, the 'RESET' button will reset the loop-station to defaul
 
 **SAMPLE PAD KEYBOARD**
 
-<img width="294" alt="image" src="https://github.com/federicoalferreri/ACTAM_project/assets/115798271/7df160ae-6603-42c2-9f0e-93629645676d">
+<img width="294" alt="image" src="https://github.com/federicoalferreri/ACTAM_project/assets/115798271/3c7b5e5b-f6ea-422c-b480-922da42761f7">
+
 
 - The ‘PLAY’ and ‘STOP’ buttons start and stop the playback of the sequencer, respectively. 
 
@@ -44,7 +45,8 @@ On the top-left corner, the 'RESET' button will reset the loop-station to defaul
 **SYNTH CONTROL parameters**
 
 
-<img width="260" alt="image" src="https://github.com/federicoalferreri/ACTAM_project/assets/115798271/f1b4d827-ac4d-4c24-b07c-bddc8e95521c">
+<img width="260" alt="image" src="https://github.com/federicoalferreri/ACTAM_project/assets/115798271/e486c11d-06a0-4c70-b606-54e34cbce0a1">
+
 
 - Envelope Controls: the interface allows the user to adjust the attack time, release time, and note length, which affect how the synthesizer generates sound.
 
@@ -67,7 +69,8 @@ Each waveform has a spectrum of partials associated with it and lots of differen
 Waveforms are the starting point of synthesis—and of all sound. In a synthesizer, an oscillator creates a repeated signal of a waveform. This waveform is what gets altered through synthesis. Different waveforms have different characteristics, which results in different sounds. Listed below, the ones we chose to use and how they relate to sound synthesis.
 
 
-<img width="1080" alt="image" src="https://github.com/federicoalferreri/ACTAM_project/assets/115798271/02d6d127-19be-416d-8698-4195f0464970">
+<img width="899" alt="Screenshot 2023-09-03 at 15 17 41" src="https://github.com/federicoalferreri/ACTAM_project/assets/115798271/ffa45903-e0ac-409e-801c-375eba43202b">
+
 
 
 
@@ -85,7 +88,8 @@ Waveforms are the starting point of synthesis—and of all sound. In a synthesiz
 
 In sound and music, an envelope describes how a sound changes over time. The most basic envelope generator is controlled with four parameters: attack, decay, sustain and release (ADSR).
 
-![image](https://github.com/federicoalferreri/ACTAM_project/assets/115798271/d2e128d0-5018-4323-ae52-78243949f9db)
+![figure-6-25-graph-of-adsr-envelope](https://github.com/federicoalferreri/ACTAM_project/assets/115798271/7c80b6a5-ccbc-4eda-8459-10588c0e5fec)
+
 
 - Attack Time: time taken for the rise of the level from nil to peak.
 - Decay Time: time taken for the level to reduce from the attack level to the sustain level.
