@@ -9,7 +9,7 @@ The application has been developed using HTML, CSS and JS code.
 
 ## GUI – User's Interface
 
-<img width="1016" alt="image" src="https://github.com/federicoalferreri/ACTAM_project/assets/115798271/d6661182-481d-4fe6-8946-55feb9bcf5e6">
+<img width="1016" alt="image" src="https://github.com/federicoalferreri/ACTAM_project/assets/115798271/d6661182-481d-4fe6-8946-55feb9bcf5e6"> 
 
 
 Overall view with which the application presents itself to the user. 
